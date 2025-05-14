@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>document_recognition</title>
+        <style>
+            body {
+                background: linear-gradient(to right, #2980B9, #6DD5FA);
+                margin: 0;
+                padding: 0;
+                font-family: 'Roboto', sans-serif;
+            }
+    
+            h1 {
+            color: #212121;
+            margin-top: 60px;
+            margin-bottom: 20px;
+            text-align: center;
+            font-size: 42px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            }
+    
+            h2 {
+            color: #424242;
+            margin-top: 50px;
+            margin-bottom: 30px;
+            text-align: center;
+            font-size: 28px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            }
+
+            h3 {
+            color: #f50a0a;
+            text-align: center;
+            font-size: 20px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            }  
+    
+            form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+            }
+    
+            input[type="file"] {
+            padding: 12px;
+            border: 2px solid #2980B9;
+            border-radius: 8px;
+            font-size: 18px;
+            width: 300px;
+            }
+    
+            input[type="submit"] {
+            background-color: #2980B9;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 18px;
+            margin-top: 20px;
+            }
+    
+            input[type="submit"]:hover {
+            background-color: #1E6591;
+            }
+    
+            img {
+            display: block;
+            margin: 40px auto;
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            }
+    
+            ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 40px 0;
+            text-align: center;
+            }
+    
+            li {
+            background-color: #FFFFFF;
+            color: #333;
+            padding: 12px 20px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            font-size: 18px;
+            font-weight: 500;
+            max-width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            }
+    
+            li:hover {
+            background-color: #E8E8E8;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+            transform: translateY(-3px);
+            transition: all 0.3s ease;
+            }
+    
+            li::before {
+            content: "✔ ";
+            margin-right: 10px;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <h1>营业执照识别</h1>
+        <h3>注意：上传照片中的营业执照保持与图像边缘平行且字迹保证清晰，并且已经截好!</h3>
+        <form action="" enctype='multipart/form-data' method='POST'>
+            <!-- <input type="file" name="file" style="margin-top:20px;"/> -->
+            <input type="file" name="file">
+            <!-- <input type="submit" value="上传" class="button-new" style="margin-top:15px;"/> -->
+            <input type="submit" value="上传"/>
+        </form>
+    </body>
+</html>
